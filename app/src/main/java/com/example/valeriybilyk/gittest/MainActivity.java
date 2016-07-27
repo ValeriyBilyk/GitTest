@@ -1,8 +1,10 @@
 package com.example.valeriybilyk.gittest;
 
 import android.content.Intent;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.ActionMode;
 import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,5 +48,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Nullable
+    @Override
+    public ActionMode onWindowStartingActionMode(ActionMode.Callback callback) {
+        return super.onWindowStartingActionMode(callback);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
     }
 }
