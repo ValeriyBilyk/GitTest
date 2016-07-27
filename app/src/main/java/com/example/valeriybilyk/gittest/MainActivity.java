@@ -55,4 +55,9 @@ public class MainActivity extends AppCompatActivity {
     public ActionMode onWindowStartingActionMode(ActionMode.Callback callback) {
         return super.onWindowStartingActionMode(callback);
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
 }
